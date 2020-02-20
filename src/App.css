@@ -1,21 +1,30 @@
 .App {
   text-align: center;
+  padding-top: 50px;
+  background-color: #303428;
+
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+  
+}
+
+.App-logo:hover {
+  transition: ease-in;
+  background-color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 30s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #303428;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +44,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.events-container {
+  background-color: rgb(3, 65, 3);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.event {
+  flex:1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.event:nth-child(odd) {
+  background-color: seagreen;
+}
+
+.event:nth-child(even) {
+  background-color: rgb(111, 150, 128);
 }
