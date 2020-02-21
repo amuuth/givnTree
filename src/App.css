@@ -37,6 +37,10 @@
   color: #61dafb;
 }
 
+.search {
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -53,11 +57,15 @@
   flex-direction: column;
   min-height: 100vh;
 }
-
 .event {
   flex:1;
   border-radius: 10px;
   padding: 10px;
+  border-style: solid;
+}
+
+.event:hover {
+  background-color: #3e8e41
 }
 
 .event:nth-child(odd) {
@@ -67,3 +75,17 @@
 .event:nth-child(even) {
   background-color: rgb(111, 150, 128);
 }
+
+ .slots-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.slot {
+  flex:1;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  border-style: solid;
+} 

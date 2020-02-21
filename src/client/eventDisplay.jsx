@@ -1,5 +1,5 @@
 import React from 'react';
-// import Slots from './slotsContainer.jsx';
+import Slots from './slotsContainer'
 
 class Event extends React.Component {
     constructor(props){
@@ -30,8 +30,8 @@ class Event extends React.Component {
         
         {this.state.open ? (
             <div className='event'>
-                This is where the slots would be!!!
-                {/* <Slots></Slots> */}
+                SLOTS:
+                <Slots></Slots>
             </div>
             ) : null}
       </div>);

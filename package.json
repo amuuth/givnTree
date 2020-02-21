@@ -4,10 +4,13 @@
   "private": true,
   "proxy": "http://localhost:8080",
   "dependencies": {
+    "@tensorflow-models/toxicity": "^1.2.2",
+    "@tensorflow/tfjs": "^1.5.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "body-parser": "latest",
+    "d3": "^5.15.0",
     "express": "^4.17.1",
     "express-promise-router": "^3.0.3",
     "pg": "^7.18.1",
